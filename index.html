@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>Pixsellar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/js-form-validator.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+                    <!-- <li class="nav__list-item">
+                        <a href="" class="nav__link">What we do</a>
+                    </li> -->
+                    <li class="nav__list-item">
+                        <a href="#demos" class="nav__link">Live Demos</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <video width="350" height="350" class="video" loop autoplay muted>
+            <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <section class="welcome" id="home">
+            <div class="container">
+                <div class="welcome__data">
+                    <img src="assets/logo.png" alt="logo" class="welcome__logo">
+                    <h1 class="section__title welcome__title">Introducing Pixsellar</h1>
+                    <p class="welcome__caption">The Future of Big Data Video Analytics</p>
+                    <p class="welcome__caption">
+                        The first ever comprehensive platform combining Computer Vision with AI for secured Big Data Video Analytics
+                    </p>
+                    <!-- <button class="button button--more" onclick="more()">Learn More</button> -->
+                    <!-- <button class="button button--apply" onclick="openModal()">Apply Now</button> -->
+                </div>
+            </div>
+            <a href="#features" class="welcome__arrow"></a>
+        </section>
+        <section id="features" class="features">
+            <div class="container">
+                <h1 class="section__title features__title">Features</h1>
+                <div class="features__items">
+                    <div class="feature">
+                        <span class="feature__number">1</span>
+                        <!-- <img src="assets/dynamic-arrow.png" alt="dynamic" class="feature__image"> -->
+                        <h2 class="feature__title">Dynamic Content Ingest</h2>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__number">2</span>
+                        <!-- <img src="assets/dynamic-arrow.png" alt="dynamic" class="feature__image"> -->
+                        <h2 class="feature__title">Augmented & Virtual Reality Enabled</h2>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__number">3</span>
+                        <!-- <img src="assets/dynamic-arrow.png" alt="dynamic" class="feature__image"> -->
+                        <h2 class="feature__title">Adaptation and customization of content</h2>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__number">4</span>
+                        <!-- <img src="assets/dynamic-arrow.png" alt="dynamic" class="feature__image"> -->
+                        <h2 class="feature__title">Personalised Unicast on Multicast Streams</h2>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__number">5</span>
+                        <!-- <img src="assets/dynamic-arrow.png" alt="dynamic" class="feature__image"> -->
+                        <h2 class="feature__title">Live & On-Demand</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="demos" id="demos">
+            <div class="container">
+                <h1 class="section__title section__title--demos">Live Demos</h1>
+                <div class="demos__list">
+                    <a class="demo" href="http://falconpixsellar.com/">
+                        <img src="assets/demo1.jpg" alt="" class="demo__img">
+                        <div class="demo__info">
+                            <p class="demo__title">Falcon</p>
+                            <p class="demo__description">Real-Time facial emotion detection</p>
+                        </div>
+                    </a>
+                    <a class="demo" href="http://experiments.kerckhoffs.co.uk/">
+                        <img src="assets/demo2.png" alt="" class="demo__img">
+                        <div class="demo__info">
+                            <p class="demo__title">Pixsellar Player</p>
+                            <p class="demo__description">Dynamic product replacement & virtual advertising</p>
+                        </div>
+                    </a>
+                    <a class="demo" href="https://drive.google.com/file/d/1Ue1IFxfQmJVt7ZXL1N4Fa_UZFfhjFr1D/view">
+                        <img src="assets/demo3.png" alt="" class="demo__img">
+                        <div class="demo__info">
+                            <p class="demo__title">Person tracking</p>
+                            <p class="demo__description">Person tracking in live sports video streams</p>
+                        </div>
+                    </a>
+                    <a class="demo" href="http://www.pixsellar.com/wp-content/uploads/2018/01/trackin-Copy.mp4">
+                        <img src="assets/demo4.png" alt="" class="demo__img">
+                        <div class="demo__info">
+                            <p class="demo__title">Object Tracking</p>
+                            <p class="demo__description">Object tracking and replacing in live video</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h1 class="section__title">Contact us</h1>
+                <form action="" class="contacts__form" name="contactForm">
+                    <div class="input__group">
+                        <label class="input__label" for="name">Name:</label>
+                        <input class="input__field" type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input__group">
+                        <label for="email2" class="input__label">E-mail:</label>
+                        <input class="input__field" type="email" name="email2" id="email2" placeholder="Enter your email">
+                    </div>
+                    <div class="input__group">
+                        <label for="website" class="input__label">Website:</label>
+                        <input class="input__field" type="text" name="website" id="website" placeholder="Enter your website">
+                    </div>
+                    <div class="input__group">
+                        <label for="comment" class="input__label">Comment:</label>
+                        <textarea class="input__textarea" name="comment" id="comment" cols="30" rows="4" placeholder="Enter your comments"></textarea>
+                    </div>
+                    <button type="submit" class="button button--apply">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright © 2018 PIXSELLAR</p>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__info">
+            <p class="modal__title">Apply</p>
+            <form name="modalform" action="" method="GET" class="modal__form">
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name" class="input__field" data-rule="required|name">
+                <input type="email" name="email" id="email" placeholder="E-mail" data-rule="required|email" class="input__field">
+                <button type="submit" class="modal__submit button button--apply">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
