@@ -186,15 +186,13 @@
         let formEl = document.getElementById('contactForm');
         formEl.addEventListener('submit', event => {
             const http = new XMLHttpRequest();
-            const url = 'http://localhost:1337/feedback';
+            const url = 'http://pixsellar.com:1337/feedback';
             const encodedForm = serialize(form).replace(/%20/g, '+');
             http.open('POST', url, true);
             http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             http.send(encodedForm);
-
             event.preventDefault();
         })
     </script>
 </body>
-
 </html>
