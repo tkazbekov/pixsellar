@@ -4,6 +4,7 @@
     <title>Pixsellar</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/js-form-validator.min.js"></script>
+    <script src="js/serialize-0.2.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="yandex-verification" content="ebc7a3cca1b76ff1" />
 </head>
@@ -141,15 +142,16 @@
         </section>
         <section class="contacts" id="contacts">
             <div class="container">
+                    <h1 class="section__title">Become a Pixsellar Disciple</h1>
                 <h1 class="section__title">Contact us</h1>
                 <form action="" class="contacts__form" id="contactForm" name="contactForm">
                     <div class="input__group">
                         <label class="input__label" for="name">Name:</label>
-                        <input class="input__field" type="text" name="name" id="name" placeholder="Enter your name">
+                        <input class="input__field" type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="input__group">
-                        <label for="email2" class="input__label">E-mail:</label>
-                        <input class="input__field" type="email" name="email2" id="email2" placeholder="Enter your email">
+                        <label for="email" class="input__label">E-mail:</label>
+                        <input class="input__field" type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="input__group">
                         <label for="website" class="input__label">Website:</label>
@@ -167,7 +169,7 @@
     <footer>
         <p class="copyright">Copyright © 2018 PIXSELLAR</p>
     </footer>
-    <div class="modal" id="modal">
+    <!-- <div class="modal" id="modal">
         <div class="modal__backdrop"></div>
         <div class="modal__info">
             <p class="modal__title">Apply</p>
@@ -177,12 +179,19 @@
                 <button type="submit" class="modal__submit button button--apply">Submit</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="js/scripts.js"></script>
     <script>
         let form = document.forms['contactForm'];
         let formEl = document.getElementById('contactForm');
         formEl.addEventListener('submit', event => {
+            const http = new XMLHttpRequest();
+            const url = 'http://localhost:1337/feedback';
+            const encodedForm = serialize(form).replace(/%20/g, '+');
+            http.open('POST', url, true);
+            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            http.send(encodedForm);
+
             event.preventDefault();
         })
     </script>

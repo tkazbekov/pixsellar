@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/tkazbekov/pixsellar#readme",
   "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemailer": "^4.6.8",
     "sqlite3": "^4.0.3"
   }
 }
