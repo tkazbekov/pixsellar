@@ -122,7 +122,7 @@
         <section class="contacts" id="contacts">
             <div class="container">
                 <h1 class="section__title">Contact us</h1>
-                <form action="" class="contacts__form" name="contactForm">
+                <form action="" class="contacts__form" id="contactForm" name="contactForm">
                     <div class="input__group">
                         <label class="input__label" for="name">Name:</label>
                         <input class="input__field" type="text" name="name" id="name" placeholder="Enter your name">
@@ -159,6 +159,23 @@
         </div>
     </div>
     <script src="js/scripts.js"></script>
+    <script>
+        let form = document.forms['contactForm'];
+        let formEl = document.getElementById('contactForm');
+        formEl.addEventListener('submit', event => {
+            event.preventDefault();
+        })
+    </script>
 </body>
 
 </html>
+
+server {
+    listen 5984;
+    lister [::]:5984;
+
+    server_name _;
+    location / {
+        proxy_pass http://localhost:5984/
+    }
+}
