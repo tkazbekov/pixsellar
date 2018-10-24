@@ -70,9 +70,9 @@ let isInViewPort = (el) => {
 }
 window.addEventListener('scroll', showDemo)
 
-let more = () => {
+let tocontacts = () => {
     window.scroll({
-        top: document.getElementById('features').offsetTop,
+        top: document.getElementById('contacts').offsetTop,
         left: 0,
         behavior: 'smooth'
     });

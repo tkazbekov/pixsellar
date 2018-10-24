@@ -37,16 +37,16 @@
             <source src="assets/video.mp4" type="video/mp4">
         </video>
         <section class="welcome" id="home">
-            <img src="assets/logo.png" alt="logo" class="welcome__logo">
+            <img src="assets/logo-full.png" alt="logo" class="welcome__logo">
             <div class="container">
                 <div class="welcome__data">
                     <h1 class="section__title welcome__title">Introducing Pixsellar</h1>
                     <p class="welcome__caption">The Future of Big Data Video Analytics</p>
                     <p class="welcome__caption">
-                        The first ever comprehensive platform combining Computer Vision with AI for secured Big Data Video Analytics
+                        The first ever comprehensive platform combining Computer Vision with AI for secured Big Data
+                        Video Analytics
                     </p>
-                    <!-- <button class="button button--more" onclick="more()">Learn More</button> -->
-                    <!-- <button class="button button--apply" onclick="openModal()">Apply Now</button> -->
+                    <button class="button button--apply" onclick="tocontacts()">Become the Pixsellar Disciple</button>
                 </div>
             </div>
             <a href="#features" class="welcome__arrow"></a>
@@ -74,6 +74,25 @@
                         <!-- <span class="feature__number">4</span> -->
                         <!-- <img src="assets/dynamic-arrow.png" alt="dynamic" class="feature__image"> -->
                         <h2 class="feature__title">Personalised Unicast on Live Multicast Stream</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h1 class="section__title">About Us</h1>
+                <div class="about__row">
+                    <div class="about__item">
+                        <img src="assets/about1.jpg" alt="sepi" class="about__image">
+                        <p class="about__name">Dr. Sepi Chakaveh</p>
+                        <p class="about__text">CEO & Founder of Pixsellar. She has a degree in Electronic Engineering &
+                            a PhD in Experimental Astrophysics. Sepi is also a Senior Associate Tutor in Data Science &
+                            Artificial Intelligence at the University of Oxford.</p>
+                    </div>
+                    <div class="about__item">
+                        <img src="assets/about2.png" alt="paul" class="about__image">
+                        <p class="about__name">Paul Harrison</p>
+                        <p class="about__text">PIXSELLAR Legal Director.</p>
                     </div>
                 </div>
             </div>
@@ -170,13 +189,3 @@
 </body>
 
 </html>
-
-server {
-    listen 5984;
-    lister [::]:5984;
-
-    server_name _;
-    location / {
-        proxy_pass http://localhost:5984/
-    }
-}
